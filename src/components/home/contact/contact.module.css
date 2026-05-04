@@ -67,7 +67,8 @@ input {
   font-size: 1.6rem;
   border: 0.5px solid var(--text-color);
   border-radius: 5rem;
-  background-color: #fff;
+  /* background-color: #fff; */
+  background-color: transparent;
   color: var(--title-color) !important;
   font-weight: 400;
   transition:
@@ -84,7 +85,8 @@ textarea {
   font-size: 1.6rem;
   border: 0.5px solid var(--text-color);
   border-radius: 1.5rem;
-  background-color: #fff;
+  /* background-color: #fff; */
+  background-color: transparent;
   color: var(--title-color) !important;
   font-weight: 400;
   transition:
