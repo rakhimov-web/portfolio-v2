@@ -1,0 +1,117 @@
+.experience {
+  width: 100%;
+  margin-top: 8rem;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.experience > h1 {
+  font-size: 2.6rem;
+}
+
+.experience > p {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+  margin-top: 3rem;
+}
+
+.card {
+  width: 100%;
+  text-align: start;
+  padding: 2rem;
+  border: 0.5px solid var(--title-color);
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease;
+}
+
+.card > img {
+  width: 5rem;
+  padding: 0.5rem;
+  border: 0.5px solid var(--title-color);
+  border-radius: 50%;
+}
+
+.card > p {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+}
+
+.card > h3 {
+  font-size: 2.2rem;
+  margin-top: 1rem;
+}
+
+.card > .cardText {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 0px 0px black;
+}
+
+/*  RESPONSIVE LAYOUT */
+@media (min-width: 768px) {
+  .experience {
+    padding: 0 5rem;
+  }
+
+  .experience > h1 {
+    font-size: 3.2rem;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+
+  .card {
+    min-height: 35rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .experience > h1 {
+    font-size: 3.8rem;
+  }
+
+  .card {
+    min-height: 30rem;
+  }
+
+  .card > h3 {
+    font-size: 2.4rem;
+  }
+}
+
+@media (min-width: 1240px) {
+  .experience {
+    padding: 0 10rem;
+  }
+
+  .experience > h1 {
+    font-size: 4.4rem;
+  }
+
+  .experience > p {
+    font-size: 1.8rem;
+  }
+
+  .card{
+    min-height: 25rem;
+  }
+
+  .card > p{
+    font-size: 1.8rem;
+  }
+}

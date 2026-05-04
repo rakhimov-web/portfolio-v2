@@ -1,0 +1,145 @@
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: var(--secondary-bg);
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+/* logo */
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 0.3rem;
+  cursor: pointer;
+}
+
+.logo span {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--title-color);
+}
+
+.logo .mark {
+  padding: 0.2rem 1rem;
+  background-color: var(--primary-color);
+  border: 0.5px solid var(--title-color);
+  border-radius: 5rem;
+}
+
+/* menu bar */
+
+.menuBtn {
+  font-size: 2.8rem;
+  color: var(--title-color);
+  cursor: pointer;
+
+  display: flex;
+  justify-content: end;
+  transition: transform 0.2s ease;
+}
+
+.menuBtn:active {
+  transform: scale(0.9);
+}
+
+.navMobile {
+  width: 100%;
+  position: fixed;
+  top: 6.5rem;
+  padding: 0 2rem;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 999;
+}
+
+.navMobile.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.navMobile nav {
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.892);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.3px);
+  -webkit-backdrop-filter: blur(10.3px);
+  border-radius: 0.8rem;
+}
+
+.navMobile nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+}
+
+.navMobile ul li span {
+  font-size: 1.6rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.navMobile ul li span:hover {
+  color: var(--primary-color);
+}
+
+.navbar {
+  display: none;
+}
+
+.navbar nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 3rem;
+}
+
+.navbar ul li span {
+  font-size: 1.4rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.navbar ul li span:hover {
+  color: var(--primary-color);
+}
+
+/*  RESPONSIVE LAYOUT */
+@media (min-width: 768px) {
+  .header {
+    padding: 1.5rem 5rem;
+  }
+
+  .menuBtn,
+  .navMobile {
+    display: none;
+  }
+
+  .navbar {
+    display: block;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar ul li span {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 1240px) {
+  .header {
+    padding: 1.5rem 10rem;
+  }
+}

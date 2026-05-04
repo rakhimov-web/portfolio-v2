@@ -1,0 +1,152 @@
+.testimonials {
+  width: 100%;
+  margin-top: 8rem;
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: var(--primary-color);
+  overflow: hidden;
+}
+
+.testimonials > h1 {
+  font-size: 2.6rem;
+}
+
+.testimonials > p {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+}
+
+.cardsContainer {
+  width: 100%;
+  margin-top: 3rem;
+  cursor: grab;
+}
+
+.cardsContainer:active {
+  cursor: grabbing;
+}
+
+:global(.swiper) {
+  overflow: visible !important;
+}
+
+:global(.swiper-slide) {
+  width: auto;
+  display: flex;
+  height: auto;
+}
+
+.card {
+  max-width: 60rem;
+  width: 100%;
+  min-height: 30rem;
+  background-color: var(--main-bg);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 0px 0px black;
+  text-align: start;
+  border: 0.5px solid var(--title-color);
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.card .quoteMark {
+  width: 4rem;
+  height: 4rem;
+  background-color: #fee145;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.4rem;
+  border: 0.5px solid var(--title-color);
+  border-radius: 50%;
+  color: var(--title-color);
+  transform: rotate(180deg);
+  flex-shrink: 0;
+}
+
+.card > p {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+.profile {
+  margin-top: 2rem;
+}
+
+.profile > h3 {
+  font-size: 1.6rem;
+}
+
+.profile > p {
+  font-size: 1.2rem;
+}
+
+.dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-top: 3rem;
+  min-height: 2rem;
+}
+
+.dot {
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--text-color);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  padding: 0;
+}
+
+.dotActive {
+  height: 2rem;
+  background-color: var(--title-color);
+  border-radius: 5rem;
+}
+
+/*  RESPONSIVE LAYOUT */
+@media (min-width: 768px) {
+  .testimonials {
+    padding: 3rem 5rem;
+  }
+
+  .testimonials h1 {
+    font-size: 3.2rem;
+  }
+
+  .card {
+    min-height: 25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .testimonials > h1 {
+    font-size: 3.8rem;
+  }
+}
+
+@media (min-width: 1240px) {
+  .testimonials {
+    padding: 5rem 10rem;
+  }
+
+  .testimonials > h1 {
+    font-size: 4.4rem;
+  }
+
+  .testimonials > p {
+    font-size: 1.8rem;
+  }
+
+  .card > p {
+    font-size: 1.8rem;
+  }
+}

@@ -1,0 +1,10 @@
+.br{
+    display: none;
+}
+
+@media (min-width: 1440px) {
+  .br {
+    display: block;
+    content: "";
+  }
+}

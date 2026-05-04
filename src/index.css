@@ -1,0 +1,102 @@
+@import url("https://api.fontshare.com/v2/css?f[]=satoshi@700,500,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@700;800&display=swap");
+
+/* ROOT */
+:root {
+  --primary-color: #c8f031;
+  --hover-color: #d9f566;
+  --main-bg: #f8f9fa;
+  --secondary-bg: #fff;
+
+  /* text */
+  --title-color: #0c0f03;
+  --text-color: #626558;
+
+  /* font family */
+  --title-font: "Syne", sans-serif;
+  --text-font: "satoshi", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  background-color: var(--main-bg);
+}
+
+html.lenis {
+  height: auto;
+  font-size: 10px;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+::selection {
+  background-color: rgba(200, 240, 49, 0.7);
+  color: #000;
+}
+
+::-moz-selection {
+  background-color: rgba(200, 240, 49, 0.7);
+  color: #000;
+}
+
+.title {
+  font-family: var(--title-font);
+  color: var(--title-color);
+  font-weight: 600;
+}
+
+.text {
+  font-family: var(--text-font);
+  color: var(--text-color);
+  font-weight: 400;
+}
+
+.button {
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
+  border: 0.5px solid var(--title-color);
+  border-radius: 3rem;
+  cursor: pointer;
+  box-shadow: 3px 3px 0px 0px black;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.button:active {
+  box-shadow: 0px 0px 0px 0px black;
+  transform: translate(4px, 4px);
+}
+
+@media (min-width: 1440px) {
+  html.lenis {
+    font-size: 12px;
+  }
+}
