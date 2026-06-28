@@ -4,7 +4,7 @@ A minimalist, high-performance professional portfolio and digital craft showcase
 
 ## 🚀 Live Preview
 
-> **Note:**
+> **Note:** Replace the placeholder below with your actual screenshot path and live link.
 
 [![Portfolio Preview](./src/assets/screenshot.png)](https://rakhim.com)
 _Click the image above to view the live site._
