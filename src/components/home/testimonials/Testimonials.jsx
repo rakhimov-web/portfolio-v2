@@ -83,7 +83,7 @@ const Testimonials = () => {
                 <div className={styles.profile}>
                   <h3 className="title">{item.name}</h3>
                   <p className="text">{item.position}</p>
-                </div>
+            c     </div>
               </div>
             </SwiperSlide>
           ))}
